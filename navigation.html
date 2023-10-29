@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation</title>
+    <link rel="stylesheet" href="css/navigation.css">
+</head>
+<body>
+    <div class="Navigation">
+        <div class="Nav_bgc"> 
+        </div>
+        <div class="Nav_box">
+            <a class="Nav_index Nav_btn">
+                <p class="bgc_text">首页</p>
+            </a>
+            <a class="Nav_menu Nav_btn" href="menu.html">
+                <p class="bgc_text">菜品</p>
+            </a>
+            <a class="Nav_about Nav_btn">
+                <p class="bgc_text">关于</p>
+            </a>
+            <a class="Nav_login Nav_btn" href="login.jsp">
+                <p class="bgc_text">登入</p>
+            </a>
+        </div>
+        <script>
+            var btns = document.querySelectorAll('.bgc_text');
+            var boxs = document.querySelectorAll('.Nav_btn');
+
+            for(var i = 0; i < btns.length; i++){
+                btns[i].setAttribute('index', i);
+                btns[i].onmouseover = function(){
+                    var index = this.getAttribute('index');
+                    boxs[index].style.opacity= "1";
+                    boxs[index].style.animation = "nav_btn_ani4 1s forwards";
+                    btns[index].style.animation = "nav_btn_ani6 1s forwards";
+                    for(var j = 0; j < btns.length; j++){
+                        if(j!=index){
+                            boxs[j].style.opacity= "1";
+                            boxs[j].style.animation = "nav_btn_ani1 1s forwards";
+                        }
+                    }
+                } 
+            }
+            for(var i = 0; i < btns.length; i++){
+                btns[i].setAttribute('index', i);
+                btns[i].onmouseout = function(){
+                    var index = this.getAttribute('index');
+                    boxs[index].style.animation = "nav_btn_ani5 1s forwards";
+                    btns[index].style.animation = "nav_btn_ani7 1s forwards";
+                    for(var j = 0; j < btns.length; j++){
+                        if(j!=index){
+                            boxs[j].style.opacity= "0";
+                            boxs[j].style.animation = "nav_btn_ani2 1s forwards";
+                        }
+                    }
+                } 
+            }
+        </script>
+    </div>
+</body>
+</html>

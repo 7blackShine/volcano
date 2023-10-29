@@ -1,0 +1,67 @@
+
+        .food_box{
+            top: 40vh;
+            left: 36vw;
+            position: absolute;
+            width: 28vw;
+            height: 50vh;
+            background-color: white;
+        }
+        .food_box form{
+            width: 100%;
+            height: 100%;
+        }
+        #file{
+            display: none;
+        }
+        #menu_pic{
+            position: absolute;
+            width: 21vw;
+            height:30vh;
+            background-size: 100%;
+        }
+        .upload_btn{
+            position: absolute;
+            right: 0;
+            width: 7vw;
+            height: 30vh;
+            border: 0px;
+            
+            font-size: 22px;
+            font-family: "myFont";
+            text-align: center;
+            line-height: 7vw;
+            writing-mode: tb-rl;
+            color: rgb(29,33,46);
+            background-color: rgb(234,228,212);
+            cursor: pointer;
+        }
+        .food_input_style{
+            position: absolute;
+            left: 4vw;
+            width: 20vw;
+            height: 4vh;
+            border: 0;
+            font-size: 18px;
+            font-family: "myFont";
+            color: rgb(29,33,46);
+        }
+        .foodName{
+            top: 35vh;
+        }
+        .foodPrice{
+            top: 40vh;
+        }
+        input:focus { outline: none; }
+        .food_btn{
+            position: absolute;
+            right: 1vw;
+            bottom: 1vh;
+            background-color: #fff;
+            border: 0;
+
+            font-size: 24px;
+            font-family: "myfont";
+            color: rgb(29,33,46);
+            cursor: pointer;
+        }

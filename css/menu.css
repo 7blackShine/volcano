@@ -1,0 +1,82 @@
+        .menu{
+            width: 100vw;
+            background-color: #0f131e;
+        }
+
+        .bgc_image{
+            position: absolute;
+            top: 28vh;
+            right: 0;
+            width: 70vw;
+            height: 72.5vh;
+        }
+        .bgc_mask{
+            position: absolute;
+            top: 28vh;
+            right: 0;
+            width: 70vw;
+            height: 72.5vh;
+            background: linear-gradient(to bottom right,rgba(16,20,31,.6) 0,rgba(16,20,31,.3) 50%,rgba(16,20,31,.6));
+        }
+        .index_link{
+            position: absolute;
+            top: 105vh;
+            right: 64vw;
+        }
+        .index_link a{
+            display: inline-block;
+            font-size: 14px;
+            font-synthesis: none;
+            font-weight: 400;
+            color: gray;
+            direction: ltr;
+        }
+        .index_link p {
+            display: inline-block;
+            font-size: 14px;
+            color: white;
+        }
+        /* 菜品 */
+        .content{
+            width: 100vw;
+        }
+        .content_box{
+            width: 58vw;
+            margin-left: 15vw;
+            overflow: hidden;
+        }
+        
+        .content_nav{
+            width: 29vw;
+            height: 8vh;
+            margin-top: 10vh;
+            background-color: white;
+            text-align: center;
+            line-height: 8vh;
+            font-family: "myFont";
+            color: #0f131e;
+            cursor: pointer;
+        }
+        .content_menu_box{
+            margin-top: 5vh;
+            width: 58vw;
+        }
+        .content_menu{
+            display: inline-block;
+            margin-right: 1vw;
+            width: 18vw;
+            height: 36vh;
+        }
+        .content_menu img{
+            width: 18vw;
+        }
+        .content_menu p{
+            margin-top: 1vh;
+            font-family: "myFont"; 
+            color: white;    
+        }
+        .content_decorate{
+            width: 100%;
+            height: 20vh;
+            border-top: 1px solid rgb(73, 71, 71);
+        }

@@ -1,0 +1,118 @@
+
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        @font-face {
+        font-family: "myFont";
+        src: url("../font/汉仪中宋S.ttf");
+        }
+        .Navigation{
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+            background-color: rgb(16, 20, 31);
+        }
+        .Nav_btn{
+            position: absolute;
+            top: 20vh;
+            width: 10vw;
+            height: 60vh;
+            writing-mode: tb-rl;
+            font-family: 'myFont';
+            border: 1px solid rgb(237, 237, 237);
+            background-color: rgb(16, 20, 31);
+            opacity: 0;
+        }
+        .Nav_bgc{
+            position: absolute;
+            top: 30vh;
+            right: 0;
+            width: 50vw;
+            height: 40vh;
+        }
+        .Nav_index{
+            left: 15vw; 
+            animation: nav_btn_ani3 2s forwards;
+        }
+        .Nav_menu{
+            left: 35vw;
+            animation: nav_btn_ani3 2s 0.5s forwards;
+        }
+        .Nav_about{
+            left: 55vw;
+            animation: nav_btn_ani3 2s 1s forwards;
+        }
+        .Nav_login{
+            left: 75vw;
+            animation: nav_btn_ani3 2s 1.5s forwards;
+        }
+        .bgc_text{
+            position: absolute;
+            width: 4vw;
+            top: 20vh;
+            left: 3vw;
+            font-size: 50px;
+            line-height: 4vw;
+            color: white;
+            cursor: pointer;
+        }
+        @keyframes nav_btn_ani1 {
+            form{
+                filter: blur(0px);
+                opacity: 1;
+            }
+            to{
+                filter: blur(10px);
+                opacity: 0;
+            }
+        }
+        @keyframes nav_btn_ani2 {
+            10%{
+                filter: blur(10px);
+                opacity: 0;
+            }
+            100%{
+                filter: blur(0px);
+                opacity: 1;
+            }
+        }
+        @keyframes nav_btn_ani3 {
+            10%{
+                top: 10vh;
+                filter: blur(10px);
+                opacity: 0;
+            }
+            100%{
+                top: 20vh;
+                filter: blur(0px);
+                opacity: 1;
+            }
+        }
+        @keyframes nav_btn_ani4{
+            0%{
+                background-color: rgb(16, 20, 31);
+            }
+            100%{
+                background-color: rgb(237, 237, 237);
+
+            }
+        }
+        @keyframes nav_btn_ani5{
+            0%{
+                background-color: rgb(237, 237, 237);
+            }
+            100%{
+                background-color: rgb(16, 20, 31);
+
+            }
+        }
+        @keyframes nav_btn_ani6{
+            0%{
+                color: rgb(237, 237, 237);
+            }
+            100%{
+                color: rgb(16, 20, 31);
+
+            }
+        }

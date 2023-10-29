@@ -1,0 +1,251 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: "myFont";
+    src: url("../font/汉仪中宋S.ttf");
+}
+
+.CardBox {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+.Card1 {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    /* visibility: hidden; */
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.Card2 {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: #0f131e;
+    animation: Card2_ani 1.5s 2s forwards;
+}
+
+.Card2_logo {
+    position: absolute;
+    top: 40vh;
+    left: 46vw;
+    width: 8vw;
+    animation: logo_ani 2s forwards;
+}
+
+@keyframes Card2_ani {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+@keyframes logo_ani {
+    from {
+        filter: blur(8px);
+    }
+
+    to {
+        filter: blur(0px);
+    }
+}
+
+
+/* Card1 */
+.videoBox {
+    position: absolute;
+    width: 100vw;
+    right: 0;
+    bottom: 0;
+    z-index: -99;
+}
+
+.mask {
+    width: 100vw;
+    height: 100vh;
+    background-color: #0f131e;
+    animation: mask_ani 2s 3.5s forwards;
+}
+
+@keyframes mask_ani {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0.5;
+        visibility: hidden;
+    }
+}
+
+/* Card1模块 */
+
+.title {
+    position: absolute;
+    top: 45vh;
+    left: 36vw;
+    width: 27vw;
+    font-size: 0;
+}
+
+.title img {
+    width: 3vw;
+    opacity: 0;
+}
+
+/* 标题动画 */
+.title_ani1 {
+    animation: title_ani1 1s 3.6s forwards;
+}
+
+.title_ani2 {
+    animation: title_ani1 1s 3.7s forwards;
+}
+
+.title_ani3 {
+    animation: title_ani1 1s 3.8s forwards;
+}
+
+.title_ani4 {
+    animation: title_ani2 1s 3.9s forwards;
+}
+
+.title_ani5 {
+    animation: title_ani1 1s 4s forwards;
+}
+
+.title_ani6 {
+    animation: title_ani1 1s 4.1s forwards;
+}
+
+.title_ani7 {
+    animation: title_ani2 1s 4.2s forwards;
+}
+
+.title_ani8 {
+    animation: title_ani2 1s 4.3s forwards;
+}
+
+.title_ani9 {
+    animation: title_ani1 1s 4.4s forwards;
+}
+
+@keyframes title_ani1 {
+    0% {
+        filter: blur(2px);
+        opacity: 0;
+        margin-left: -1vw;
+    }
+
+    100% {
+        filter: blur(0px);
+        opacity: 1;
+        margin-right: 0;
+    }
+}
+
+@keyframes title_ani2 {
+    0% {
+        filter: blur(2px);
+        opacity: 0;
+        margin-left: 1vw;
+    }
+
+    100% {
+        filter: blur(0px);
+        opacity: 1;
+        margin-right: 0;
+    }
+}
+
+/* Card1导航模块 */
+/* logo */
+.nav {
+    position: absolute;
+    opacity: 0;
+    top: 10vh;
+    right: 0;
+    width: 11vw;
+    height: 80vh;
+    border-left: 1px solid black;
+    animation: nav_ani 2s 4s forwards;
+
+}
+
+.nav_logo {
+    position: absolute;
+    right: 3vw;
+    width: 4.5vw;
+}
+
+@keyframes nav_ani {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* enroll */
+.nav_enroll {
+    position: absolute;
+    right: 4vw;
+    top: 66vh;
+    width: 2vw;
+    height: 14vh;
+    border: 1px solid rgba(197, 191, 190, 0.6);
+    background-color: rgba(197, 191, 190, 0);
+    box-sizing: border-box;
+}
+
+.nav_enroll_font {
+    position: absolute;
+    right: 4vw;
+    top: 66vh;
+    width: 2vw;
+    height: 14vh;
+    font-size: 16px;
+    text-align: center;
+    line-height: 2vw;
+    writing-mode: tb-rl;
+    font-family: 'myFont';
+    color: rgb(197, 191, 190);
+}
+
+.nav_enroll_font:hover {
+    color: black;
+}
+
+@keyframes enroll_ani {
+    from{
+        border-top: 1px solid rgba(197, 191, 190, 0.6);
+    }
+    to{
+        border-top: 14vh solid rgba(197, 191, 190, 0.6);
+    }
+}
+
+@keyframes enroll_ani2 {
+    from {
+        border-top: 14vh solid rgba(197, 191, 190, 0.6);
+    }
+
+    to {
+        border-top: 1px solid rgba(197, 191, 190, 0.6);
+    }
+}

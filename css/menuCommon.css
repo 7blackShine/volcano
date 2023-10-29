@@ -1,0 +1,83 @@
+.menu{
+    width: 100vw;
+    background-color: #0f131e;
+}
+/* top模块 */
+.top{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 120vh;
+}
+.bgc_text{
+    position: absolute;
+    top: 15vh;
+    left: -0.8vw;
+    color: rgba(29,33,46,.8);
+    font-size: 200px;
+    font-family:  Garamond,serif;
+    line-height: 1;
+    white-space: nowrap;
+}
+.bgc_text_zh{
+    position: absolute;
+    top: 28vh;
+    left: 8vw;
+    font-size: 50px;
+    font-family: "myFont";
+    writing-mode: tb-rl;
+    color: white;
+}
+/* bottom模块 */
+.bottom{
+    position: relative;
+    width: 100vw;
+    height: 30vh;
+    background-color: rgb(237, 237, 237);
+}
+.bottom img{
+    position: absolute;
+    top: 10vh;
+    left: 15vw;
+    width: 5vw;
+}
+.back{
+    position: absolute;
+    top: 12vh;
+    right: 28vw;
+    width: 8vw;
+    height: 4vh;
+    border: 1px solid #0f131e;
+    box-sizing: border-box;
+}
+.back_text{
+    position: absolute;
+    top: 12vh;
+    right: 28vw;
+    width: 8vw;
+    height: 4vh;
+    line-height: 4vh;
+    text-align: center;
+    font-family: "myFont";
+    color: #0f131e;
+}
+.back_text:hover{
+    color: rgb(237, 237, 237);
+}
+@keyframes back_ani {
+    from{
+        border-left: 0px solid #0f131e;
+    }
+    to{
+        border-left: 8vw solid #0f131e;
+    }
+}
+@keyframes back_ani2 {
+    from{
+        border-left: 8vw solid #0f131e;
+    }
+    to{
+        border-left: 1px solid #0f131e;
+    }
+}

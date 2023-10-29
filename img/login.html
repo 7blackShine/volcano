@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<!-- saved from url=(0095)file:///Z:/work/%E5%89%8D%E7%AB%AF/%E7%81%AB%E5%B1%B1%E5%B1%8B%E5%8F%B0/login.html?uname=&upwd= -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        a{
+            text-decoration: none;
+        }
+        @font-face {
+        font-family: "myFont";
+        src: url("./font/汉仪中宋S.ttf");
+        }
+        .login{
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+            background-color: rgb(234,228,212);
+        }
+        .motion_box{
+            position: absolute;
+            right: 0;
+            width: 60vw;
+            height: 100vh;
+            background-color: rgb(16, 20, 31);
+            /* animation: motion_ani 1s forwards; */
+        }
+        .motion_box img{
+            position: absolute;
+            left: 27vw;
+            top: 45vh;
+            width: 6vw;
+        }
+        @keyframes motion_ani {
+            0%{
+                left: 40vw;
+            }
+            100%{
+                left: 0;
+            }
+        }
+        .motion_a{
+            position: absolute;
+            font-size: 40px;
+            font-family: "myFont";
+            color: rgb(234,228,212);
+            writing-mode: tb-rl;
+        }
+        .motion_register{
+            left: 2vw;
+            bottom: 4vh;
+        }
+        .motion_login{
+            right: 2vw;
+            bottom: 4vh;
+        }
+        /* logoin模块 */
+        .login_box{
+            position: absolute;
+            top: 15vh;
+            left: 9vw;
+            width: 22vw;
+            height: 70vh;
+        }
+        .status_box{
+            position: absolute;
+            width: 100%;
+            height: 10vh;
+            font-size: 30px;
+            font-family: 'myFont';
+            text-align: center;
+            line-height: 10vh;
+            box-sizing: border-box;
+            
+        }
+        .status1{
+            position: absolute;
+            width: 50%;
+            height: 10vh;
+            background-color: rgb(16, 20, 31);
+            color: rgb(234,228,212);
+        }
+        .status2{
+            position: absolute;
+            right: 0;
+            width: 50%;
+            height: 10vh;
+            background-color: pink; 
+        }
+        .font_style{
+            position: absolute;
+            font-size: 24px;
+            font-family: "myFont";
+            color: rgb(16, 20, 31);
+        }
+        .font_position1{
+            left: 9vw;
+            top: 15vh;
+        }
+        .font_position2{
+            left: 9vw;
+            top: 30vh;
+        }
+        .input_style{
+            position: absolute;
+            width: 16vw;
+            height: 4vh;
+            background-color: rgba(0, 0, 0, 0);
+            border: 0px;
+            border-bottom: 2px solid rgb(16, 20, 31);
+            font-family: 'myFont';
+            font-size: 18px;
+            text-align: center;
+        }
+        input:focus { outline: none; }
+        .input_position1{
+            left: 3vw;
+            top: 20vh;
+        }
+        .input_position2{
+            left: 3vw;
+            top: 35vh;
+        }
+        .submit_box{
+            position: absolute;
+            top: 45vh;
+            left: 9vw;
+            width: 4vw;
+            height: 14vh;
+            border: 3px solid rgb(16, 20, 31);
+            font-size: 24px;
+            font-family: 'myFont';
+            text-align: center;
+            line-height: 4vw;
+            writing-mode: tb-rl;
+            box-sizing: border-box;
+        }
+        .submit{
+            position: absolute;
+            top: 45vh;
+            left: 9vw;
+            width: 4vw;
+            height: 14vh;
+            background-color: rgba(0, 0, 0, 0);
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="login">
+        <div class="motion_box">
+            <a href="file:///Z:/work/%E5%89%8D%E7%AB%AF/%E7%81%AB%E5%B1%B1%E5%B1%8B%E5%8F%B0/login.html?uname=&amp;upwd="><img src="./login_files/logo2.png" alt=""></a>
+            <a href="file:///Z:/work/%E5%89%8D%E7%AB%AF/%E7%81%AB%E5%B1%B1%E5%B1%8B%E5%8F%B0/login.html?uname=&amp;upwd=" class="motion_register motion_a">注册</a>
+            <a href="file:///Z:/work/%E5%89%8D%E7%AB%AF/%E7%81%AB%E5%B1%B1%E5%B1%8B%E5%8F%B0/login.html?uname=&amp;upwd=" class="motion_login motion_a">登录</a>
+        </div>
+        <div class="login_box">
+            <form action="file:///Z:/work/%E5%89%8D%E7%AB%AF/%E7%81%AB%E5%B1%B1%E5%B1%8B%E5%8F%B0/login.html?uname=&amp;upwd=">
+                <div class="status_box">
+                    <div class="status1">用户</div>
+                    <div class="status2">商家</div>
+                </div>
+                <p class="font_style font_position1">用户名</p>
+                <input class="input_style input_position1" type="text" name="uname" placeholder="在此输入">
+                <p class="font_style font_position2">密&nbsp;&nbsp;&nbsp;&nbsp;码</p>
+                <input class="input_style input_position2" type="password" name="upwd" placeholder="在此输入">
+                <div class="submit_box">登录</div>
+                <input class="submit" type="submit" value="">
+            </form>
+        </div>
+    </div>
+
+</body></html>

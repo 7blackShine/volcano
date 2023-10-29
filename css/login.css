@@ -1,0 +1,276 @@
+
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        a{
+            text-decoration: none;
+        }
+        @font-face {
+        font-family: "myFont";
+        src: url("../font/汉仪中宋S.ttf");
+        }
+        .login{
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+            background-color: rgb(234,228,212);
+        }
+        /* logoin模块 */
+        .login_box{
+            position: absolute;
+            top: 15vh;
+            left: 9vw;
+            width: 22vw;
+            height: 70vh;
+        }
+        .register_box{
+            position: absolute;
+            top: 15vh;
+            right: 9vw;
+            width: 22vw;
+            height: 70vh;
+        }
+        /* 用户身份 */
+        .status_box{
+            position: absolute;
+            width: 100%;
+            height: 10vh;
+            font-size: 26px;
+            font-family: 'myFont';
+            text-align: center;
+            line-height: 10vh;
+            box-sizing: border-box;
+            
+        }
+        .status_choice{
+            position: absolute;
+            width: 50%;
+            height: 10vh;
+            background-color: rgb(16, 20, 31);
+            
+        }
+        .status_choice2{
+            position: absolute;
+            width: 50%;
+            height: 10vh;
+            background-color: rgb(16, 20, 31);
+            
+        }
+        .status1{
+            position: absolute;
+            width: 50%;
+            height: 10vh;
+            color: rgb(234,228,212);
+        }
+        .status2{
+            position: absolute;
+            right: 0;
+            width: 50%;
+            height: 10vh;
+        }
+        .status3{
+            position: absolute;
+            width: 50%;
+            height: 10vh;
+            color: rgb(234,228,212);
+        }
+        .status4{
+            position: absolute;
+            right: 0;
+            width: 50%;
+            height: 10vh;
+        }
+        .radio1{
+            position: absolute;
+            left: 0;
+            width: 10vw;
+            height: 10vh;
+            opacity: 0;
+            cursor: pointer;
+        }
+        .radio2{
+            position: absolute;
+            width: 10vw;
+            height: 10vh;
+            opacity: 0;
+            cursor: pointer;
+        }
+        .radio3{
+            position: absolute;
+            left: 0;
+            width: 10vw;
+            height: 10vh;
+            opacity: 0;
+            cursor: pointer;
+        }
+        .radio4{
+            position: absolute;
+            width: 10vw;
+            height: 10vh;
+            opacity: 0;
+            cursor: pointer;
+        }
+        @keyframes radio_ani {
+            0%{
+                right: 11vw;
+            }
+            100%{
+                right: 0;
+            }
+        }
+        @keyframes radio_ani2 {
+            0%{
+                right: 0;
+            }
+            100%{
+                right: 11vw;
+            }
+        }
+        @keyframes status_ani{
+            from{
+                color: rgb(16, 20, 31);
+            }
+            to{
+                color: rgb(234,228,212);
+            }
+        }
+        @keyframes status_ani2{
+            from{
+                color: rgb(234,228,212);
+            }
+            to{
+                color: rgb(16, 20, 31);
+            }
+        }
+        /* 表单元素 */
+        .font_style{
+            position: absolute;
+            font-size: 24px;
+            font-family: "myFont";
+            color: rgb(16, 20, 31);
+        }
+        .font_position1{
+            left: 9vw;
+            top: 15vh;
+        }
+        .font_position2{
+            left: 9vw;
+            top: 30vh;
+        }
+        .input_style{
+            position: absolute;
+            width: 16vw;
+            height: 4vh;
+            background-color: rgba(0, 0, 0, 0);
+            border: 0px;
+            border-bottom: 2px solid rgb(16, 20, 31);
+            font-family: 'myFont';
+            font-size: 18px;
+            text-align: center;
+        }
+        input:focus { outline: none; }
+        .input_position1{
+            left: 3vw;
+            top: 20vh;
+        }
+        .input_position2{
+            left: 3vw;
+            top: 35vh;
+        }
+        .submit_box{
+            position: absolute;
+            top: 45vh;
+            left: 9vw;
+            width: 4vw;
+            height: 14vh;
+            border: 3px solid rgb(16, 20, 31);
+            font-size: 24px;
+            font-family: 'myFont';
+            text-align: center;
+            line-height: 4vw;
+            writing-mode: tb-rl;
+            box-sizing: border-box;
+        }
+        .submit{
+            position: absolute;
+            top: 45vh;
+            left: 9vw;
+            width: 4vw;
+            height: 14vh;
+            background-color: rgba(0, 0, 0, 0);
+            cursor: pointer;
+        }
+        .submit2{
+            position: absolute;
+            top: 45vh;
+            left: 9vw;
+            width: 4vw;
+            height: 14vh;
+            background-color: rgba(0, 0, 0, 0);
+            cursor: pointer;
+        }
+        /* 登录or注册选择 */
+        .motion_box{
+            position: absolute;
+            right: 0;
+            width: 60vw;
+            height: 100vh;
+            background-color: rgb(16, 20, 31);
+            /* animation: ani 1s forwards; */
+        }
+        .motion_box img{
+            position: absolute;
+            left: 27vw;
+            top: 45vh;
+            width: 6vw;
+        }
+        .motion_p{
+            position: absolute;
+            font-size: 40px;
+            font-family: "myFont";
+            color: rgb(234,228,212);
+            writing-mode: tb-rl;
+            cursor: pointer;
+        }
+        .motion_register{
+            left: 2vw;
+            bottom: 4vh;
+        }
+        .motion_login{
+            right: 2vw;
+            bottom: 4vh;
+            color : rgb(16, 20, 31);
+        }
+        @keyframes motion_box_ani{
+            from{
+                right: 0;
+            }
+            to{
+                right: 40vw;
+            }
+        }
+        @keyframes motion_box_ani2{
+            from{
+                right: 40vw;
+            }
+            to{
+                right: 0;
+            }
+        }
+        @keyframes motion_box_ani3{
+            from{
+                color : rgb(234,228,212);
+            }
+            to{
+                color : rgb(16, 20, 31);
+            }
+        }
+        @keyframes motion_box_ani4{
+            from{
+                color : rgb(16, 20, 31);
+            }
+            to{
+                color : rgb(234,228,212);
+            }
+        }
